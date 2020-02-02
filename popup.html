@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<meta charset="utf-8" />
+
+<head>
+    <title>ez.hr</title>
+    <script src="popup.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="loading">
+                <img src="https://media.tenor.com/images/d5015577b1133a47299b149b6fab1aaa/tenor.gif" alt="">
+            </div>
+            <div id="result">
+                <h4 id="name">Nome do candidato</h4>
+                <span class="badge badge-danger" id="status-bad">Candidato já está no pipefy!</span>
+                <span class="badge badge-primary" id="status-ok">Candidato ainda não está no pipefy!</span>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-dark" id="checkPage">Buscar candidato!</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    #loading,
+    #result,
+    #status-ok,
+    #status-bad {
+        display: none;
+    }
+</style>
